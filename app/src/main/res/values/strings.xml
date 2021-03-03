@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TransferApp</string>
+    <string name="app_name">Dog Image Viewer App</string>
     <string name="Display">Display</string>
     <string name="Selection">Item Selection</string>
 </resources>

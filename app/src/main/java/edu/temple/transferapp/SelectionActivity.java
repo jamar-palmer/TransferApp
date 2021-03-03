@@ -52,6 +52,7 @@ public class SelectionActivity extends AppCompatActivity {
                     launchIntent.putExtra("description", dogList.get(position).toString());
                     launchIntent.putExtra("image", position);
                     startActivityForResult(launchIntent, CODE);
+                    finish();
                 }
             }
             @Override
