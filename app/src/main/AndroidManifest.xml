@@ -14,8 +14,7 @@
             android:label="@string/Display"
             ></activity>
         <activity
-            android:name=".SelectionActivity"
-            android:label="@string/Selection">
+            android:name=".SelectionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
