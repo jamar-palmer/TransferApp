@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TransferApp">
-        <activity android:name=".DisplayActivity"></activity>
-        <activity android:name=".SelectionActivity">
+        <activity
+            android:name=".DisplayActivity"
+            android:label="@string/Display"
+            ></activity>
+        <activity
+            android:name=".SelectionActivity"
+            android:label="@string/Selection">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
