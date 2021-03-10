@@ -1,6 +1,7 @@
 package edu.temple.transferapp;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,32 +43,30 @@ public class ImageAdapter extends BaseAdapter {
 
     @Override
         public View getView(int position, View convertView, ViewGroup parent) {
+        LinearLayout linearLayout = new LinearLayout(context);
+        linearLayout.setOrientation(LinearLayout.HORIZONTAL);
+        //linearLayout.getLayoutParams().height = 50;
+        //params;
+        //params.width =50;
             TextView textView = new TextView(context);
-            textView.setText(items.get(position));
-            textView.setGravity(Gravity.CENTER);
-            textView.setTextSize(20);
-            return textView;
-        }
-
-        @Override
-        public View getDropDownView(int position, View convertView, ViewGroup parent) {
-
-            LinearLayout linearLayout = new LinearLayout(context);
-            linearLayout.setOrientation(LinearLayout.HORIZONTAL);
-            TextView desc = new TextView(context);
             ImageView pic = new ImageView(context);
-            linearLayout.addView(desc);
-            linearLayout.addView(pic);
-            pic.getLayoutParams().height= 50;
-            desc.setTextSize(15);
-            desc.setPadding(20,0,0,0);
+        linearLayout.addView(textView);
+        //linearLayout.addView(pic);
+        //pic.getLayoutParams().height= 50;
 
-            desc.setText(items.get(position));
-            if(position == 0){}else {
-                pic.setImageResource(pics.get(position-1));
-            }
+
+        textView.setPadding(20,0,0,0);
+            textView.setText(items.get(position));
+            linearLayout.setBackground(context.getDrawable(pics.get(position)));
+          //  pic.
+            textView.setGravity(Gravity.CENTER);
+            textView.setTextSize(25);
+        textView.setText(items.get(position));
+
 
             return linearLayout;
         }
+
+
 
     }
