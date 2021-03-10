@@ -22,6 +22,7 @@ public class SelectionActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         this.setTitle("Item Selection");
+        
 
         ArrayList dogList = new ArrayList<String>();
         dogList.add("Please Select A Dog From The List");
