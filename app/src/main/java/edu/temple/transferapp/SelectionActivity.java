@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Spinner;
 
 import java.util.ArrayList;
@@ -43,11 +44,12 @@ public class SelectionActivity extends AppCompatActivity {
         gridView = findViewById(R.id.gvNew);
 
         ImageAdapter adapter = new ImageAdapter(this, dogList, dogImage);
+
         gridView.setAdapter(adapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                if(position != 0) {
+                {
                     Intent launchIntent = new Intent(SelectionActivity.this, DisplayActivity.class);
                     launchIntent.putExtra("description", dogList.get(position).toString());
                     launchIntent.putExtra("image", position);

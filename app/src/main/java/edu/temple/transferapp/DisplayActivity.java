@@ -40,11 +40,8 @@ public class DisplayActivity extends AppCompatActivity {
     }
 
     private void showPicture(int position) {
-        if (position != 0) {
             imageView.setImageResource(dogImages[position]);
-        } else {
-            imageView.setImageResource(0);
-        }
+
     }
 
     @Override
