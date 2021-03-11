@@ -23,15 +23,15 @@ public class SelectionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        this.setTitle("Item Selection");
+        this.setTitle(R.string.titling);
 
         ArrayList dogList = new ArrayList<String>();
-        dogList.add("German Shepard");
-        dogList.add("Bulldog");
-        dogList.add("Poodle");
-        dogList.add("Siberian Husky");
-        dogList.add("Dachshund");
-        dogList.add("Pomeranian");
+        dogList.add(R.string.dog1);
+        dogList.add(R.string.dog2);
+        dogList.add(R.string.dog3);
+        dogList.add(R.string.dog4);
+        dogList.add(R.string.dog5);
+        dogList.add(R.string.dog6);
 
         ArrayList dogImage = new ArrayList<Integer>();
         dogImage.add(R.drawable.german_shepherd);
