@@ -2,4 +2,14 @@
     <string name="app_name">Dog Image Viewer App</string>
     <string name="Display">Display</string>
     <string name="Selection">Item Selection</string>
+    <string name="titling">Item Selection</string>
+    <string name="guidance">Please Select an Item</string>
+    <string-array name="dogNames">
+        <item>German Shepard</item>
+        <item>Bulldog</item>
+        <item>Poodle</item>
+        <item>Siberian Husky</item>
+        <item>Dachshund</item>
+        <item>Pomeranian</item>
+    </string-array>
 </resources>

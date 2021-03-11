@@ -3,6 +3,7 @@ package edu.temple.transferapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,13 +26,13 @@ public class SelectionActivity extends AppCompatActivity {
 
         this.setTitle(R.string.titling);
 
-        ArrayList dogList = new ArrayList<String>();
-        dogList.add(R.string.dog1);
-        dogList.add(R.string.dog2);
-        dogList.add(R.string.dog3);
-        dogList.add(R.string.dog4);
-        dogList.add(R.string.dog5);
-        dogList.add(R.string.dog6);
+        ArrayList<String> dogList = new ArrayList<String>();
+        Resources res = getResources();
+        String[] dogNames = res.getStringArray(R.array.dogNames);
+
+        for(int i = 0; i < dogNames.length; i++){
+            dogList.add(dogNames[i]);
+        }
 
         ArrayList dogImage = new ArrayList<Integer>();
         dogImage.add(R.drawable.german_shepherd);
