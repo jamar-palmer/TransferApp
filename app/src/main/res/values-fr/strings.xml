@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Application de visionneuse d images de chien</string>
     <string name="Display">Afficher</string>
     <string name="Selection">Sélection d article</string>
     <string name="titling">Sélection d article</string>
